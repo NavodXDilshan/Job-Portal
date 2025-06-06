@@ -1,0 +1,12 @@
+server:
+  port: 8088
+
+spring:
+  profiles:
+    active: native
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+

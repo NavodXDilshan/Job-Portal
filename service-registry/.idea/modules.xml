@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../application-service/application-service/application-service.iml" filepath="$PROJECT_DIR$/../application-service/application-service/application-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/../config-server/config-server/config-server.iml" filepath="$PROJECT_DIR$/../config-server/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/../joblisting-service/joblisting-service/joblisting-service.iml" filepath="$PROJECT_DIR$/../joblisting-service/joblisting-service/joblisting-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-registry/service-registry.iml" filepath="$PROJECT_DIR$/service-registry/service-registry.iml" />

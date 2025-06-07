@@ -14,7 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="api-gateway" target="1.5" />
+      <module name="api-gateway" target="17" />
       <module name="application-service" target="17" />
       <module name="config-server" target="17" />
       <module name="joblisting-service" target="17" />
@@ -23,6 +23,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
       <module name="application-service" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="joblisting-service" options="-parameters" />

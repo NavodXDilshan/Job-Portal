@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
         <module name="joblisting-service" />
         <module name="config-server" />
         <module name="application-service" />
@@ -13,6 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-gateway" target="1.5" />
       <module name="application-service" target="17" />
       <module name="config-server" target="17" />
       <module name="joblisting-service" target="17" />

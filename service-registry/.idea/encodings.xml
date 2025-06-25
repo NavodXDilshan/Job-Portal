@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/../api-gateway/api-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../application-service/application-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../application-service/application-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../assignment-service/assignment-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../config-server/config-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../config-server/config-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../joblisting-service/joblisting-service/src/main/java" charset="UTF-8" />

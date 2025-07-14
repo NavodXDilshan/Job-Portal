@@ -7,8 +7,11 @@ import com.dsproject.joblisting_service.Repository.JobsRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -54,6 +57,25 @@ public class JobController {
                 job.setApplication(applicationClient.findByJob(job.getId())));
 
         return jobs;
+    }
+
+    @GetMapping("/{id}/with-applicants")
+    public Job findByIdWithApplicants(@PathVariable String id) {
+        LOGGER.info("Specific Job Find with Applicants: id = {}", id);
+        Optional<Job> jobOpt = repo.findById(id);
+        if (jobOpt.isEmpty()) {
+            LOGGER.warn("Job not found: {}", id);
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Job not found: " + id);
+        }
+        Job job = jobOpt.get();
+        job.setApplication(applicationClient.findByJob(id));
+        return job;
+    }
+
+    @DeleteMapping("{id}")
+    public List <Job> deleteSpecificJob(@PathVariable String id) {
+        repo.deleteById(id);
+        return repo.findAll();
     }
 
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/api-gateway/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/service-registry/service-registry/pom.xml" />
+        <option value="$PROJECT_DIR$/assignment-service/assignment-service/pom.xml" />
+        <option value="$PROJECT_DIR$/joblisting-service/joblisting-service/pom.xml" />
+        <option value="$PROJECT_DIR$/application-service/application-service/pom.xml" />
+        <option value="$PROJECT_DIR$/profile-service/pom.xml" />
+        <option value="$USER_HOME$/Downloads/profile-service/pom.xml" />
+        <option value="$PROJECT_DIR$/profile-service/profile-service/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-24" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

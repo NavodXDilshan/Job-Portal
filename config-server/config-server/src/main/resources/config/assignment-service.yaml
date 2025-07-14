@@ -1,0 +1,19 @@
+server:
+  port: 8083
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+job:
+  service:
+    url: http://localhost:8081
+
+application:
+  service:
+    url: http://localhost:8082
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0

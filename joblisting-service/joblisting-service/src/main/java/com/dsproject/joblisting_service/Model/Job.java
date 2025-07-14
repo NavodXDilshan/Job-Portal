@@ -1,18 +1,21 @@
 package com.dsproject.joblisting_service.Model;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Document(collection = "Jobpost")
 public class Job {
-    private Long id;
+    private String id;
     private String name;
     private List<Application> application = new ArrayList<>();
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -41,7 +44,7 @@ public class Job {
                 '}';
     }
 
-    public Job(Long id, String name) {
+    public Job(String id, String name) {
         this.id = id;
         this.name = name;
     }

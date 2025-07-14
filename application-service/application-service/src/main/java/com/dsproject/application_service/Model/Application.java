@@ -1,6 +1,9 @@
 package com.dsproject.application_service.Model;
 
-public record Application(Long id, Long jobId, String name, String email, int score) {
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection="applicants")
+public record Application(String id, String jobId, String name, String email, int score) {
 
 
 }

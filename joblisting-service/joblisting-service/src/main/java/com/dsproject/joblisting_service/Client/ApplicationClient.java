@@ -8,7 +8,7 @@ import org.springframework.web.service.annotation.HttpExchange;
 import java.util.List;
 
 @HttpExchange
-public interface JobClient {
+public interface ApplicationClient {
     @GetExchange("application/job/{jobId}")
     public List<Application> findByJob(@PathVariable("jobId") String jobId);
 }

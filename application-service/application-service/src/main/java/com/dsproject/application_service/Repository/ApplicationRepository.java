@@ -1,6 +1,7 @@
 package com.dsproject.application_service.Repository;
 
 import com.dsproject.application_service.Model.Application;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -9,6 +10,9 @@ import java.util.List;
 @Repository
 public class ApplicationRepository {
     private List<Application> applications = new ArrayList<>();
+
+    @Autowired
+    ApplicationsRepository repo;
 
     public Application add(Application application) {
         applications.add(application);
@@ -22,8 +26,8 @@ public class ApplicationRepository {
                 .orElseThrow();
     }
 
-    public List<Application> findByJob(Long jobId){
-        return applications.stream()
+    public List<Application> findByJob(String jobId){
+        return repo.findAll().stream()
                 .filter(a->a.jobId().equals(jobId))
                 .toList();
     }

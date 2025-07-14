@@ -1,5 +1,9 @@
 spring:
   application:
     name: application-service
+  data:
+    mongodb:
+      uri: mongodb+srv://kmnavoddilshan:EfxVFWxNLKmA4Pwk@cluster0.cdlujqw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: application
   config:
     import: "optional:configserver:http://localhost:8088"

@@ -94,7 +94,8 @@ public class AssignmentController {
                 application.jobId(),
                 application.name(),
                 application.email(),
-                score
+                score,
+                application.userId()
         );
         return applicationClient.save(updatedApplication);
     }

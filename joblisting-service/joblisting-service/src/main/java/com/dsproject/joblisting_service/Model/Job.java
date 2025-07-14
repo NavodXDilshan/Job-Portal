@@ -9,7 +9,17 @@ import java.util.List;
 public class Job {
     private String id;
     private String name;
+    private String description;
     private List<Application> application = new ArrayList<>();
+//    private List<Application> applications;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     public String getId() {
         return id;
@@ -44,13 +54,22 @@ public class Job {
                 '}';
     }
 
-    public Job(String id, String name) {
+    public Job(String id, String name, String description) {
         this.id = id;
         this.name = name;
+        this.description = description;
     }
 
     public Job() {
     }
 
 
+//    public List<Application> getApplications() {
+//        return applications;
+//    }
+//
+//    public void setApplications(List<Application> applications) {
+//        this.applications = applications != null ? applications : List.of();
+//    }
 }
+

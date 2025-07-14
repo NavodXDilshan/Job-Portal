@@ -29,6 +29,7 @@ public class ApplicationController {
         LOGGER.info("Application add: {}",application);
 //        return repository.add(application);
         return  repo.save(application);
+
     }
 
     @GetMapping
@@ -36,6 +37,7 @@ public class ApplicationController {
         LOGGER.info("Applications find");
         return repo.findAll();
     }
+
 
     @GetMapping("/{id}")
     public Optional<Application> findById(@PathVariable String id){

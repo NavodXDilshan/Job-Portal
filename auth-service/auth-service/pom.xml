@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.dsproject</groupId>
-	<artifactId>profile-service</artifactId>
+	<artifactId>auth-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>profile-service</name>
-	<description>Profile management service for Job Listing</description>
+	<name>auth-service</name>
+	<description>Authentication service for Job Listing</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -37,7 +37,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+			<artifactId>spring-boot-starter-oauth2-client</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -57,21 +57,10 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-        <dependency>
-            <groupId>com.dsproject</groupId>
-            <artifactId>joblisting-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
 		<dependency>
-			<groupId>com.dsproject</groupId>
-			<artifactId>application-service</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>

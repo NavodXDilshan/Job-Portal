@@ -52,6 +52,12 @@ public class ApplicationController {
         return repository.findByJob(jobId);
     }
 
+    @GetMapping("/user/{userId}")
+    public List<Application> findByUserId(@PathVariable("userId") String userId) {
+        LOGGER.info("Applications find: userId={}", userId);
+        return repo.findByUserId(userId);
+    }
+
     @DeleteMapping("/{applicationId}")
     public void deleteApplication(@PathVariable("applicationId") String applicationId) {
         LOGGER.info("Deleting application with applicationId: {}", applicationId);

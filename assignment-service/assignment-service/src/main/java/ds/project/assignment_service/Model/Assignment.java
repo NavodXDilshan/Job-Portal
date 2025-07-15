@@ -16,6 +16,7 @@ public class Assignment {
     }
 
     public Assignment(String jobId, String questionText, List<String> options, int correctOptionIndex) {
+        this.id=id;
         this.jobId = jobId;
         this.questionText = questionText;
         this.options = options;

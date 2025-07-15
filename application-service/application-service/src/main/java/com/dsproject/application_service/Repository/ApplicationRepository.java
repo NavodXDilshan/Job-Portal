@@ -35,4 +35,6 @@ public class ApplicationRepository {
     public List<Application> findAll() {
         return applications;
     }
+
+
 }

@@ -1,5 +1,8 @@
 package com.dsproject.profile_service.Controller;
 
+import com.dsproject.application_service.Model.Application;
+
+import com.dsproject.profile_service.Client.ApplicationClient;
 import com.dsproject.profile_service.Model.Profile;
 import com.dsproject.profile_service.Repository.ProfileRepository;
 import org.slf4j.Logger;
@@ -17,6 +20,9 @@ public class ProfileController {
 
     @Autowired
     private ProfileRepository profileRepository;
+
+    @Autowired
+    private ApplicationClient applicationClient;
 
     @PostMapping
     public ResponseEntity<Profile> createProfile(@RequestBody Profile profile) {
@@ -83,5 +89,21 @@ public class ProfileController {
                     return ResponseEntity.ok().<Void>build();
                 })
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @GetMapping("/{userId}/applications")
+    public ResponseEntity<List<Application>> getApplicationsByUserId(@PathVariable String userId) {
+        LOGGER.info("Fetching applications for user: {}", userId);
+        try {
+            List<Application> applications = applicationClient.findByUserId(userId);
+            if (applications.isEmpty()) {
+                LOGGER.warn("No applications found for userId: {}", userId);
+                return ResponseEntity.ok().body(applications); // Return empty list with 200 OK
+            }
+            return ResponseEntity.ok(applications);
+        } catch (Exception e) {
+            LOGGER.error("Failed to fetch applications for userId: {}", userId, e);
+            return ResponseEntity.status(500).body(null);
+        }
     }
 }

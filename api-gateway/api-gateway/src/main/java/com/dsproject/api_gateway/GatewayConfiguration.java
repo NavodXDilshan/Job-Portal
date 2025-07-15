@@ -20,6 +20,9 @@ public class GatewayConfiguration {
                 .route("assignment-service", r -> r
                         .path("/assignment/**")
                         .uri("lb://assignment-service"))
+                .route("profile-service", r -> r
+                        .path("/profile/**")
+                        .uri("lb://profile-service"))
                 .build();
     }
 }

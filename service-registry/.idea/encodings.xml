@@ -12,6 +12,8 @@
     <file url="file://$PROJECT_DIR$/../joblisting-service/joblisting-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../profile-service/profile-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../profile-service/profile-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../recommendation_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../recommendation_service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-registry/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-registry/src/main/resources" charset="UTF-8" />
   </component>

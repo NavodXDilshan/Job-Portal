@@ -23,6 +23,9 @@ public class GatewayConfiguration {
                 .route("profile-service", r -> r
                         .path("/profile/**")
                         .uri("lb://profile-service"))
+                .route("recommendation-service", r -> r
+                        .path("/recommendation/**")
+                        .uri("lb://recommendation-service"))
                 .build();
     }
 }

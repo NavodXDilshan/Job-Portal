@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/../config-server/config-server/config-server.iml" filepath="$PROJECT_DIR$/../config-server/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/../joblisting-service/joblisting-service/joblisting-service.iml" filepath="$PROJECT_DIR$/../joblisting-service/joblisting-service/joblisting-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/../profile-service/profile-service/profile-service.iml" filepath="$PROJECT_DIR$/../profile-service/profile-service/profile-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../recommendation_service/recommendation_service.iml" filepath="$PROJECT_DIR$/../recommendation_service/recommendation_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-registry/service-registry.iml" filepath="$PROJECT_DIR$/service-registry/service-registry.iml" />
     </modules>
   </component>
